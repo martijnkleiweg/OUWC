@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <title>OU Walking Club Admin Application</title>
+  <meta name="author" content="Martinus Kleiweg"/>
+  <link rel="stylesheet" href="ouwalking.css">
+</head>
+<body>
+<!-- The navigation menu-->
+<nav>
+<header>
+<div class="topbar">
+<div class="logo">
+<img src="images/logo.jpg" alt="Logo" width="115" height="115">
+</div>
+<div class="name"><h1>OU Walking Club Admin Application</h1></div>
+<div class="userinfo">Username <a href="signout.html">(Sign Out)</a></div>
+</div>
+
+<menu>
+<div class="menuitem">
+<a href="index.html">Home</a></div>
+<div class="menuitem">
+<a href="walkevents.html">Walk Events</a></div>
+<div class="menuitem">
+<a href="socialevents.html">Social Events</a></div>
+<div class="menuitem">
+<a href="members.html"><b>Members &#x25BE;</b></a></div>
+<div class="menuitem">
+<a href="news.html">News</a></div>
+<div class="menuitem">
+<a href="email.html">E-mail</a></div>
+</menu>
+
+<div class="submenu">
+  <div class="submenuitem">
+  <a href="members.html">Awaiting Approval</a></div>
+  <div class="submenuitem">
+  <a href="activemembers.html">Active</a></div>
+  <div class="submenuitem">
+  <a href="nonactivemembers.html"><b>Inactive</b></a></div>
+</div>
+
+</nav>
+
+<!--The main content-->
+
+<div class="toolbar">
+<a href="addmember.html" class="button">Add Member</a>
+<div class="searchform">
+<form action="search.php">
+    <form action="/search.php">
+      <input type="text" name="search">
+      <button type="submit"class="button">Search</button>
+    </form>
+  </div>
+</form>
+</div>
+
+<article>
+<hr>
+<div class="socialtable_home"><h2>Inactive Members</h2>
+  <table>
+    <tr>
+      <th>Name</th>
+      <th>Date</th>
+      <th>E-mail</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr>
+      <td>Peter Shilton</td>
+      <td>23-05-2020</td>
+      <td>petershilton@gmail.com</td>
+      <td><a href="memberdetails.html"><i>Details</i></a></td>
+      <td><a href="editmember.html"><i>Edit</i></a></td>
+      <td><a href="#"><i>Delete</i></a></td>
+    </tr>
+    <tr>
+      <td>Stuart Pearce</td>
+      <td>22-04-2020</td>
+      <td>stuartpierce@outlook.com</td>
+      <td><a href="memberdetails.html"><i>Details</i></a></td>
+      <td><a href="editmember.html"><i>Edit</i></a></td>
+      <td><a href="#"><i>Delete</i></a></td>
+    </tr>
+    <tr>
+      <td>Paul Gascoigne</td>
+      <td>23-03-2020</td>
+      <td>gazza67@gmail.com</td>
+      <td><a href="memberdetails.html"><i>Details</i></a></td>
+      <td><a href="editmember.html"><i>Edit</i></a></td>
+      <td><a href="#"><i>Delete</i></a></td>
+    </tr>
+    <tr>
+      <td>David Platt</td>
+      <td>20-02-2020</td>
+      <td>davidplatt@hotmail.com</td>
+      <td><a href="memberdetails.html"><i>Details</i></a></td>
+      <td><a href="editmember.html"><i>Edit</i></a></td>
+      <td><a href="#"><i>Delete</i></a></td>
+    </tr>
+    <tr>
+      <td>Gary Lineker</td>
+      <td>10-02-2020</td>
+      <td>garylineker@bbc.co.uk</td>
+      <td><a href="memberdetails.html"><i>Details</i></a></td>
+      <td><a href="editmember.html"><i>Edit</i></a></td>
+      <td><a href="#"><i>Delete</i></a></td>
+    </tr>
+  </table>
+  <div class="tablenav">Page <a href="nonactivemembers.html"><b>1 </b></a><a href="nonactivemembers.html"><b>2 </b></a><a href="nonactivemembers.html"><b>3</b></a></div>
+</div>
+
+
+</article>
+<!-- The footer-->
+<footer>
+<a href="#">Help</a> |
+<a href="#">Contact</a> |
+<a href="#">Copyright</a> |
+<a href="#">Conditions of use</a>
+</footer>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <title>OU Walking Club Admin Application</title>
+  <meta name="author" content="Martinus Kleiweg"/>
+  <link rel="stylesheet" href="q2a.css">
+</head>
+<body>
+
+<nav>
+<header>
+<div class="topbar">
+<div class="logo">
+<img src="images/logo.jpg" alt="Logo" width="115" height="115">
+</div>
+<div class="name"><h1>OU Walking Club Admin Application</h1></div>
+<div class="userinfo">Username <a href="signout.html">(Sign Out)</a></div>
+</div>
+
+<!-- The navigation menu-->
+<div class="navmenu">
+<div class="menuitem">
+<a href="index.html">Home</a></div>
+<div class="menuitem">
+<a href="walkevents.html"><b>Walk Events</b></a></div>
+<div class="menuitem">
+<a href="socialevents.html">Social Events</a></div>
+<div class="menuitem">
+<a href="members.html">Members &#x25BE;</a></div>
+<div class="menuitem">
+<a href="news.html">News</a></div>
+<div class="menuitem">
+<a href="email.html">E-mail</a></div>
+</div>
+</header>
+</nav>
+
+<!--The main content-->
+<main>
+<h2>Add Walk Event</h2>
+<div class="box">
+<form action="http://students.open.ac.uk/mct/tt284/reflect/reflect.php">
+<div class="row">
+<div class="column25"><label for="name"><b>Name</b></label></div>
+<div class="column75"><input type="text" id="name" name="name" placeholder="e.g. Watcombe to Sheldon"></div>
+</div>
+<div class="row">
+<div class="column25"><label for="date"><b>Date</b></label></div>
+<div class="column75"><input type="date" id="date" name="date"></div>
+</div>
+<div class="row">
+<div class="column25"><label for="time"><b>Time</b></label></div>
+<div class="column75"><input type="text" id="time" name="time" placeholder="e.g. 10.30am"></div>
+</div>
+<div class="row">
+<div class="column25"><label for="meetingpoint"><b>Meeting point</b></label></div>
+<div class="column75"><input type="text" id="meetingpoint" name="meetingpoint" placeholder="e.g. Watcombe Car Park"></div>
+</div>
+<div class="row">
+<div class="column25"><label for="distance"><b>Distance in miles</b></label></div>
+<div class="column75"><input type="number" id="distance" name="distance" min="1" max="99" placeholder="e.g. 9"></div>
+</div>
+<div class="row">
+<div class="column25"><label for="notes"><b>Notes</b></label></div>
+<div class="column75"><input type="text" id="notes" name="notes" placeholder="e.g. Grade A walk with steep hills"></div>
+</div>
+<div class="row">
+<div class="column25"><label for="status"><b>Status</b></label></div>
+<div class="column75"><select name="status" id="status">
+  <option value="proposed">Proposed</option>
+  <option value="approved">Approved</option>
+  <option value="rejected">Rejected</option>
+</select>
+</div>
+</div>
+<input type="hidden" name="sessionID" id="sessionID" value="12345678-09ab-1111-cdef" >
+<div class="row">
+  <input type="submit" class="button" value="Submit">
+</div>
+</form>
+</div>
+</main>
+<!-- The footer-->
+<footer>
+<a href="#">Help</a> |
+<a href="#">Contact</a> |
+<a href="#">Copyright</a> |
+<a href="#">Conditions of use</a>
+</footer>
+</body>
+</html>

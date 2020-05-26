@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <title>OU Walking Club Admin Application</title>
+  <meta name="author" content="Martinus Kleiweg"/>
+  <link rel="stylesheet" href="ouwalking.css">
+</head>
+<body>
+<!-- The navigation menu-->
+<nav>
+<header>
+<div class="topbar">
+<div class="logo">
+<img src="images/logo.jpg" alt="Logo" width="115" height="115">
+</div>
+<div class="name"><h1>OU Walking Club Admin Application</h1></div>
+<div class="userinfo">Username <a href="signout.html">(Sign Out)</a></div>
+</div>
+
+<menu>
+<div class="menuitem">
+<a href="index.html">Home</a></div>
+<div class="menuitem">
+<a href="walkevents.html">Walk Events</a></div>
+<div class="menuitem">
+<a href="socialevents.html">Social Events</a></div>
+<div class="menuitem">
+<a href="members.html">Members &#x25BE;</a></div>
+<div class="menuitem">
+<a href="news.html">News</a></div>
+<div class="menuitem">
+<a href="email.html"><b>E-mail</b></a></div>
+</menu>
+
+</nav>
+
+<!--The main content-->
+<article>
+<h2>Compose E-mail</h2>
+<div class="box">
+<form action="http://students.open.ac.uk/mct/tt284/reflect/reflect.php">
+  <div class="row">
+  <div class="column25"><label for="sendto"><b>Send e-mail to</b></label></div>
+  <div class="column75"><select name="sendto" id="sendto">
+    <option value="proposed">All members</option>
+    <option value="approved">All admins</option>
+  </select>
+  </div>
+  </div>
+<div class="row">
+<div class="column25"><label for="subject"><b>Subject</b></label></div>
+<div class="column75"><input type="text" id="subject" name="subject" placeholder="e.g. OU Walking Club has new chairman"></div>
+</div>
+<div class="row">
+<div class="column25"><label for="text"><b>Text</b></label></div>
+<div class="column75"><textarea id="text" rows="10" name="text" placeholder="Tell the story here"></textarea></div>
+</div>
+<div class="row">
+<div class="column25"><label for="attachement"><b>Attachement</b></label></div>
+<div class="column75"><input type="file" id="file" name="file"></div>
+</div>
+<div class="row">
+<div class="column25"><label for="sendingdate"><b>Sending date</b></label></div>
+<div class="column75"><input type="date" id="sendingdate" name="sendingdate"></div>
+</div>
+<div class="row">
+  <input type="submit" class="button" value="Send">
+</div>
+</form>
+</div>
+
+
+
+</article>
+<!-- The footer-->
+<footer>
+<a href="#">Help</a> |
+<a href="#">Contact</a> |
+<a href="#">Copyright</a> |
+<a href="#">Conditions of use</a>
+</footer>
+</body>
+</html>
