@@ -393,6 +393,7 @@ footer a:active {
 @media only screen and (max-width: 375px) {
   /* Put normally inline elements on a new line taking upto the whole width -
      i.e. present like a <div> element */
+     
   .column25,  .column75 {
     float: none;
     width: 100%;
