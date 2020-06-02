@@ -53,9 +53,7 @@ background-color:#ffffff;
 }
 
 .navmenu {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-gap: 18px;
+  display: flex;
   background-color:#0b55a8;
   padding-top:20px;
   padding-bottom:20px;
@@ -393,7 +391,7 @@ footer a:active {
 @media only screen and (max-width: 375px) {
   /* Put normally inline elements on a new line taking upto the whole width -
      i.e. present like a <div> element */
-     
+
   .column25,  .column75 {
     float: none;
     width: 100%;
