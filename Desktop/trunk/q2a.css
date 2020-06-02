@@ -11,6 +11,23 @@ color:#000000;
 width:1000px;
 }
 
+hr {
+margin-top:10px;
+margin-bottom:10px;
+margin-left:0px;
+
+}
+
+p {
+text-align:left;
+}
+
+b {
+font-weight: bold;
+}
+
+/*Header*/
+
 .topbar {
 margin-left:0px;
 display: flex;
@@ -23,6 +40,17 @@ width: 20%;
 
 .name {
 width: 60%;
+}
+
+/*Navigation menu*/
+
+nav {
+margin-top:10px;
+margin-left:0px;
+height:100%;
+text-align:center;
+font-size:14px;
+background-color:#ffffff;
 }
 
 .navmenu {
@@ -54,13 +82,7 @@ width: 60%;
   padding-bottom:8px;
 }
 
-.menuitem{
-padding-left: 6px;
-padding-right: 6px;
-width:15%;
-}
-
-.submenuitem{
+.menuitem, .submenuitem{
 padding-left: 6px;
 padding-right: 6px;
 width:15%;
@@ -71,43 +93,36 @@ width:15%;
 }
 
 
-.menuitem a:hover {
+.menuitem a:hover, .menuitem a:active  {
   color:#ffffff;
   text-decoration: underline;
 }
 
-.menuitem a:active {
-  color:#ffffff;
-  text-decoration: underline;
-}
 
-.submenuitem a:link {
+.submenuitem a:link, .submenuitem a:visited {
   color:#000000;
 }
 
-.submenuitem a:visited {
-  color:#000000;
-}
 
-.submenuitem a:hover {
+.submenuitem a:hover, .submenuitem a:active {
   color:#000000;
   text-decoration: underline;
 }
 
-.submenuitem a:active {
-  color:#000000;
-  text-decoration: underline;
+/*Main content*/
+
+main {
+padding-top:20px;
+margin-left:12px;
+font-family: Arial, Helvetica, sans-serif;
+font-size:14px;
+text-align:left;
+padding-bottom:20px;
 }
 
-
-.walktable_home {
-  margin-top:30px;
-  margin-bottom:30px;
-}
-
-.socialtable_home {
-  margin-top:30px;
-  margin-bottom:30px;
+.container{
+  display:flex;
+  height:20px;
 }
 
 .welcome {
@@ -179,6 +194,8 @@ float:right;
   padding:20px;
 }
 
+/*Form*/
+
 input[type="text"], textarea, input[type="password"]{
   width: 95%;
   margin-right:10px;
@@ -235,7 +252,6 @@ input[type="submit"]{
   cursor: pointer;
   float: right;
   margin-right:25px;
-  /*background-color:#ffffff;*/
 }
 
 .editbutton{
@@ -275,21 +291,6 @@ margin-bottom:10px;
   clear: both;
 }
 
-hr {
-margin-top:10px;
-margin-bottom:10px;
-margin-left:0px;
-
-}
-
-p {
-text-align:left;
-}
-
-b {
-font-weight: bold;
-}
-
 /*Three different headers*/
 
 h1 {
@@ -308,16 +309,6 @@ font-size:14px;
 font-weight:bold;
 }
 
-/*Navigation menu*/
-
-nav {
-margin-top:10px;
-margin-left:0px;
-height:100%;
-text-align:center;
-font-size:14px;
-background-color:#ffffff;
-}
 
 /*Links*/
 
@@ -339,6 +330,11 @@ table {
   border-collapse: collapse;
 }
 
+.walktable_home, .socialtable_home  {
+  margin-top:30px;
+  margin-bottom:30px;
+}
+
 td, th {
   border: 1px solid #dddddd;
   font-size:14px;
@@ -358,21 +354,6 @@ background:#ff6666;
 }
 tr.bold{
 font-weight:bold;
-}
-
-main {
-padding-top:20px;
-margin-left:12px;
-font-family: Arial, Helvetica, sans-serif;
-font-size:14px;
-text-align:left;
-padding-bottom:20px;
-}
-
-
-.container{
-  display:flex;
-  height:20px;
 }
 
 /*Footer*/
